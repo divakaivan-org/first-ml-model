@@ -14,6 +14,10 @@ def info():
         'app_name': 'first-ml-model',
     })
 
+@app.route('/api/v1/predict')
+def predict():
+    return jsonify({'prediction': 'The market will go up!'}), 200
+
 @app.route('/api/v1/healthz')
 def health():
     return jsonify({'status': 'up'}), 200
