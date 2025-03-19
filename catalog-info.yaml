@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: first-ml-model
+  description: Python app that displays time - named first-ml-model
+  annotations:
+    github.com/project-slug: divakaivan-org/first-ml-model
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  owner: development
+  lifecycle: experimental
